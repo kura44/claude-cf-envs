@@ -33,4 +33,15 @@ Claude Code で日々の変更を出すための Claude Code プラグイン。
 
 手で入れるなら `/plugin marketplace add kura44/claude-cf-envs` → `/plugin install cf-envs@claude-cf-envs`。
 
+**Claude Code on the web(クラウドの作業環境)では、`.claude/settings.json` に書いても自動では入らない**
+(2026-09 時点。コンテナは毎回まっさらで、宣言されたプラグインを取りに行かない)。
+環境の設定の **Setup script** に次を足すと、セッションが始まる前に入る:
+
+```bash
+claude plugin marketplace add kura44/claude-cf-envs
+claude plugin install cf-envs@claude-cf-envs --scope user
+```
+
+入ったかは、セッションのスキル一覧に `cf-envs:setup` `cf-envs:workflow` が出るかで見る。
+
 入れたら「開発環境を作って」と頼めば `cf-envs:setup` が読まれる。
