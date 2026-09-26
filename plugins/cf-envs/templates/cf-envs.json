@@ -1,0 +1,8 @@
+{
+  "accountId": "<Cloudflare のアカウントID>",
+  "repo": "<owner>/<repo>",
+  "worker": "<本番の Worker 名>",
+  "devWorker": "<本番の Worker 名>-dev",
+  "workersSubdomain": "<アカウントの workers.dev サブドメイン>",
+  "productionUrl": "https://<本番のドメイン>"
+}

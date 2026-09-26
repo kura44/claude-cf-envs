@@ -1,0 +1,11 @@
+{
+  "name": "claude-cf-envs",
+  "owner": { "name": "kura44" },
+  "plugins": [
+    {
+      "name": "cf-envs",
+      "source": "./plugins/cf-envs",
+      "description": "Cloudflare Workers + D1 の開発・ステージング・本番の3段構成を立ち上げ、日々の開発で使う"
+    }
+  ]
+}

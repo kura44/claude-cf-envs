@@ -1,0 +1,5 @@
+{
+  "name": "cf-envs",
+  "version": "0.1.0",
+  "description": "Cloudflare Workers + D1 の開発・ステージング・本番の3段構成(立ち上げと毎回の開発)"
+}
